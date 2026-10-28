@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 36px;
+        }
+
+        p {
+            color: darkslategray;
+            font-size: 20px;
+        }
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}   
+    </style>
+</head>
+
+<body>
+    
+<h1>Welcome to My Website!</h1>
+
+<img src="myphoto.jpg.jpeg" alt="My Photo" width="200">
+<p>This is my first website.</p>
+
+    <p>Hi! I am learning web development.</p>
+    <p>This is my first personal website.</p>
+
+<button onclick="showAbout()">About Me</button>
+
+<div id="about" style="display: none; margin-top: 20px;">
+    <h2>About Me</h2>
+    <p>Hi! I am learning web development.</p>
+    <p>I want to build amazing websites!</p>
+</div>
+
+<script>
+    function showAbout() {
+        let section = document.getElementById("about");
+
+        if (section.style.display === "none") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
+</script>
+
+
+    
+</body>
+</html>
+
